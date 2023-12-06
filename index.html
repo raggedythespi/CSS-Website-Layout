@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            display: block;
+            float: left;
+            text-align: center;
+            color: #f2f2f2;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        pre {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-wdith:600px) {
+        .column {
+            width: 100%;
+        }
+    }
+    </style>
+    <title>CSS Website Layout</title>
+</head>
+<body>
+    <h1>Website Layout</h1>
+    <p>A website is often divided into headers, menu, content, and a footer</p>
+    <h1>Header</h1>
+    <p>A header is usually located at the top pf the website (or right below a top navigation menu). It often contains a logo or a website name.</p>
+    <h1>Navigation Bar</h1>
+    <p>A navigation bar contains a list of links to help visitors navigating through your website.</p>
+    <h1>Content</h1>
+    <p>The layout in this section, often depends on the target users. The most common layout is one (or combining them) of the following:</p>
+    <pre>
+        <b>1-column</b> (often used for mobile browesers)
+        <b>2-column</b> (often used for tablets and laptops)
+        <b>3-column layout</b> (only used for desktops)
+    </pre>
+    <p>We will create a 3-column layout, and change it to a 1-column layout on smaller screens.</p>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+    </div>
+    <div class="column">
+        <h2>Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+   
+  
+
+</body>
+</html>
